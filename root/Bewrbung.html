@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Bewerbung</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        .top-bar {
+            background-color: #00A1DE;
+            color: white;
+            padding: 10px 0;
+        }
+        .top-bar a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: white;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: black;
+            font-weight: lighter;
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-link.active {
+            color: #00A1DE;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #00A1DE;
+        }
+        .dropdown-menu {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+        }
+        .dropdown-item.active, .dropdown-item:active {
+            background-color: #00A1DE;
+            color: white;
+        }
+        .dropdown-item {
+            color: black;
+        }
+        .dropdown-item:hover {
+            background-color: #00A1DE;
+            color: white;
+        }
+        .form-section {
+            padding: 20px;
+        }
+        .form-section h2 {
+            color: #00A1DE;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #00A1DE;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div class="top-bar text-center">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <a href="tel:+4980312217896">
+                <i class="fas fa-phone"></i> +49 8031 221 7896
+            </a>
+            <a href="tel:+436641743303">
+                <i class="fas fa-phone"></i> +43 664 174 3303
+            </a>
+        </div>
+        <div>
+            <a href="mailto:office@debatemp.de">
+                <i class="fas fa-envelope"></i> office@debatemp.de
+            </a>
+            <a href="https://www.facebook.com">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../pictures/logo_debache_gmbh.png" alt="DEBA Temp Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">STARTSEITE</a></li>
+                <li class="nav-item"><a class="nav-link" href="Unternehmen.html">UNTERNEHMEN</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                <li class="nav-item"><a class="nav-link" href="Leistungen.html">LEISTUNGEN</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="jobsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        JOBS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="jobsDropdown">
+                        <li><a class="dropdown-item" href="#">Allgemeine(-r) Helfer(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Bauspengler(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">CNC-Dreher(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Elektriker(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Flämmer(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">GWH-Installateur(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Isolierer(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Kranführer(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Maler(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Tischler(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Trockenbauer(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">WIG-Schweißer(-in)</a></li>
+                        <li><a class="dropdown-item" href="#">Zimmerer(-in) Holzbau</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="Bewerbung.html">BEWERBUNG</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        INFOS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="infoDropdown">
+                        <li><a class="dropdown-item" href="Kontakt.html">Kontakt</a></li>
+                        <li><a class="dropdown-item" href="Anfahrt.html">Anfahrt</a></li>
+                        <li><a class="dropdown-item" href="Downloads.html">Downloads</a></li>
+                        <li><a class="dropdown-item" href="Impresum.html">Impressum</a></li>
+                        <li><a class="dropdown-item" href="Datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container form-section">
+    <h2>Bewerbung</h2>
+    <form id="applicationForm">
+        <div class="form-group">
+            <label for="name" class="form-label">Vor- & Nachname *</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="street" class="form-label">Strasse</label>
+            <input type="text" class="form-control" id="street" name="street">
+        </div>
+        <div class="form-group">
+            <label for="zipcode" class="form-label">PLZ</label>
+            <input type="text" class="form-control" id="zipcode" name="zipcode">
+        </div>
+        <div class="form-group">
+            <label for="city" class="form-label">Ort</label>
+            <input type="text" class="form-control" id="city" name="city">
+        </div>
+        <div class="form-group">
+            <label for="country" class="form-label">Land</label>
+            <input type="text" class="form-control" id="country" name="country" value="Deutschland">
+        </div>
+        <div class="form-group">
+            <label for="phone" class="form-label">Telefon</label>
+            <input type="text" class="form-control" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="dob" class="form-label">Geburtsdatum</label>
+            <input type="date" class="form-control" id="dob" name="dob">
+        </div>
+        <div class="form-group">
+            <label for="svnr" class="form-label">SV Nummer (E-Card)</label>
+            <input type="text" class="form-control" id="svnr" name="svnr">
+        </div>
+        <div class="form-group">
+            <label for="position" class="form-label">Bewerbung als</label>
+            <input type="text" class="form-control" id="position" name="position">
+        </div>
+        <div class="form-group">
+            <label for="documents" class="form-label">Dokumente</label>
+            <input type="file" class="form-control" id="documents" name="documents[]" multiple>
+        </div>
+        <div class="form-group">
+            <label for="license" class="form-label">Führerschein</label>
+            <select class="form-control" id="license" name="license">
+                <option value="">Keine ausgewählt</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="car" class="form-label">Eigenes Auto</label>
+            <select class="form-control" id="car" name="car">
+                <option value="">Bitte Wählen</option>
+                <option value="Ja">Ja</option>
+                <option value="Nein">Nein</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="forklift" class="form-label">Staplerschein</label>
+            <select class="form-control" id="forklift" name="forklift">
+                <option value="">Bitte Wählen</option>
+                <option value="Ja">Ja</option>
+                <option value="Nein">Nein</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="crane" class="form-label">Kranschein</label>
+            <select class="form-control" id="crane" name="crane">
+                <option value="">Bitte Wählen</option>
+                <option value="Ja">Ja</option>
+                <option value="Nein">Nein</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="available" class="form-label">Sofort einsetzbar</label>
+            <select class="form-control" id="available" name="available">
+                <option value="">Bitte Wählen</option>
+                <option value="Ja">Ja</option>
+                <option value="Nein">Nein</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="salary" class="form-label">Lohnvorstellung (netto)</label>
+            <input type="text" class="form-control" id="salary" name="salary" placeholder="€ 1500,-">
+        </div>
+        <div class="form-group">
+            <label for="message" class="form-label">Nachricht</label>
+            <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
+            <label class="form-check-label" for="privacy">Ich akzeptiere die Datenschutzbestimmungen der DEBA Temp.</label>
+            <a href="Datenschutz.html" target="_blank">→ Hier geht's zu den Datenschutzbestimmungen.</a>
+        </div>
+        <button type="submit" class="btn btn-primary">Absenden</button>
+    </form>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("c0NAGZJuM7Bmk8RKb"); // Ersetze YOUR_USER_ID mit deinem tatsächlichen user_id
+    })();
+
+    document.getElementById('applicationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Verhindert das standardmäßige Absendeverhalten
+
+        var form = document.getElementById('applicationForm');
+        var formData = new FormData(form);
+
+        var templateParams = {
+            to_email: 'office@debatemp.de', // Empfänger E-Mail-Adresse
+            name: formData.get('name'),
+            street: formData.get('street'),
+            zipcode: formData.get('zipcode'),
+            city: formData.get('city'),
+            country: formData.get('country'),
+            phone: formData.get('phone'),
+            email: formData.get('email'),
+            dob: formData.get('dob'),
+            svnr: formData.get('svnr'),
+            position: formData.get('position'),
+            license: formData.get('license'),
+            car: formData.get('car'),
+            forklift: formData.get('forklift'),
+            crane: formData.get('crane'),
+            available: formData.get('available'),
+            salary: formData.get('salary'),
+            message: formData.get('message')
+        };
+
+        emailjs.send('service_6v68th4', 'template_o30wkfc', templateParams)
+            .then(function(response) {
+                alert('Bewerbung erfolgreich gesendet!');
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                alert('Es gab ein Problem beim Senden der Bewerbung.');
+                console.log('FAILED...', error);
+            });
+    });
+</script>
+</body>
+</html>
